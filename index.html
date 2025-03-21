@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f7;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('macbook-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #0071e3;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.feature {
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.feature h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Product Gallery */
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  padding: 2rem;
+  background-color: #f5f5f7;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Specifications Table */
+.specs {
+  padding: 4rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.specs h2 {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f7;
+}
+
+/* Call-to-Action Section */
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #0071e3;
+  color: white;
+}
+
+.cta h2 {
+  margin-bottom: 2rem;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-left: 1rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background-color: #1d1d1f;
+  color: white;
+  text-align: center;
+}
+
+.social-links, .legal-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a, .legal-links a {
+  margin: 0 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple MacBook Pro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>MacBook Pro</h1>
+      <p>Performance. Redefined.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <img src="m2-chip-icon.png" alt="M2 Chip">
+      <h2>M2 Chip</h2>
+      <p>Next-level performance for all your tasks.</p>
+    </div>
+    <div class="feature">
+      <img src="retina-display-icon.png" alt="Retina Display">
+      <h2>Retina Display</h2>
+      <p>Stunning visuals with true-to-life colors.</p>
+    </div>
+    <div class="feature">
+      <img src="battery-icon.png" alt="All-Day Battery">
+      <h2>All-Day Battery</h2>
+      <p>Power that keeps up with you.</p>
+    </div>
+  </section>
+
+  <!-- Product Gallery -->
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="macbook-side.jpg" alt="MacBook Side View">
+      <p>Sleek and portable design.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="macbook-top.jpg" alt="MacBook Top View">
+      <p>Thin, light, and powerful.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="macbook-keyboard.jpg" alt="MacBook Keyboard">
+      <p>Backlit Magic Keyboard.</p>
+    </div>
+  </section>
+
+  <!-- Specifications Table -->
+  <section class="specs">
+    <h2>Technical Specifications</h2>
+    <table>
+      <tr>
+        <th>Processor</th>
+        <td>Apple M2 Chip</td>
+      </tr>
+      <tr>
+        <th>Memory</th>
+        <td>16GB Unified Memory</td>
+      </tr>
+      <tr>
+        <th>Storage</th>
+        <td>512GB SSD</td>
+      </tr>
+      <tr>
+        <th>Display</th>
+        <td>13.3-inch Retina Display</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+    <h2>Experience the Future</h2>
+    <a href="#" class="cta-button">Buy Now</a>
+    <a href="#" class="cta-button secondary">Compare Models</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+    <div class="legal-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
+</body>
+</html>
